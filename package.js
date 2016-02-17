@@ -1,6 +1,6 @@
 Package.describe({
   name: 'xavizalote:telescope-slack',
-  version: '0.0.6',
+  version: '0.0.8',
   summary: 'Automatically send Telescope posts as messages to connected Slack teams via the Add To Slack button',
   git: 'https://github.com/xavizalote/telescope-slack.git',
 
@@ -33,7 +33,8 @@ Package.onUse(function(api) {
     'lib/client/stylesheets/custom.scss',
     'lib/client/templates/add_to_slack.html',
     'lib/client/templates/add_to_slack.js',
-    'lib/client/templates/howdy.html',
+    'lib/client/templates/slack_connected.html',
+    'lib/client/templates/slack_connected.js',  
     'lib/template_modules.js'
   ], ['client']);
 
