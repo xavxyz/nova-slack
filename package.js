@@ -31,8 +31,8 @@ Package.onUse(function(api) {
 
   api.addFiles([
     'lib/client/stylesheets/custom.scss',
-    'lib/client/templates/add_to_slack.html',
-    'lib/client/templates/add_to_slack.js',
+    'lib/client/templates/add_to_slack_button.html',
+    'lib/client/templates/add_to_slack_button.js',
     'lib/client/templates/slack_connected.html',
     'lib/client/templates/slack_connected.js',  
     'lib/template_modules.js'
