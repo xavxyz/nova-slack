@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'xavizalote:telescope-slack',
+  name: 'xavcz:slackscope',
   version: '0.0.9',
   summary: 'Automatically send Telescope posts as messages to connected Slack teams via the Add To Slack button',
-  git: 'https://github.com/xavizalote/telescope-slack.git',
+  git: 'https://github.com/xavcz/telescope-slack.git',
 
   documentation: 'README.md'
 });
@@ -18,7 +18,7 @@ Package.onUse(function(api) {
     'telescope:posts@0.25.6',
     'telescope:comments@0.25.6',
     'telescope:scoring@0.25.6',
-    'http'
+    'khamoud:slack-api@0.0.2'
   ]);
 
   api.addFiles([
@@ -39,7 +39,6 @@ Package.onUse(function(api) {
   ], ['client']);
 
   api.addFiles([
-    'lib/server/api.js',
     'lib/server/methods.js'
   ], ['server']);
 
