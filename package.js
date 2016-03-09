@@ -12,14 +12,14 @@ Package.onUse(function(api) {
   api.versionsFrom(['METEOR@1.0']);
 
   api.use([
+    'telescope:core@0.25.6',
     'telescope:lib@0.25.6',
     'telescope:i18n@0.25.6',
     'telescope:settings@0.25.6',
     'telescope:posts@0.25.6',
     'telescope:comments@0.25.6',
     'telescope:scoring@0.25.6',
-    'khamoud:slack-api@0.0.2',
-    'percolate:synced-cron@1.3.0'
+    'khamoud:slack-api@0.0.2'
   ]);
 
   api.addFiles([
