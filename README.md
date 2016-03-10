@@ -9,7 +9,7 @@ Once the package is installed:
 
 1. You first need to create a [Slack App](https://api.slack.com/applications/new).
 
-2. Configure the redirect URI as `http://your-telescope-app.com/add-to-slack`.
+2. Configure the redirect URI as `http://your-telescope-app.com/slack-connected`.
 
 3. Register your App Client ID & App Client Secret to your Telescope Settings.
 
