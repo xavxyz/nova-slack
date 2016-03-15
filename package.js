@@ -1,6 +1,6 @@
 Package.describe({
   name: 'xavcz:slackscope',
-  version: '0.0.12',
+  version: '0.0.14',
   summary: 'Automatically send Telescope posts as messages to connected Slack teams via the Add To Slack button',
   git: 'https://github.com/xavcz/telescope-slack.git',
 
