@@ -19,11 +19,9 @@ Package.onUse(function(api) {
     'telescope:posts@0.25.6',
     'telescope:comments@0.25.6',
     'telescope:scoring@0.25.6',
-    'khamoud:slack-api@0.0.2'
   ]);
 
   api.addFiles([
-    'package-tap.i18n',
     'lib/callbacks.js',
     'lib/custom_fields.js',
     'lib/routes.js',
@@ -43,10 +41,4 @@ Package.onUse(function(api) {
     'lib/server/weekly-summary.js',
     'lib/server/methods.js'
   ], ['server']);
-
-  var languages = ["ar", "bg", "cs", "da", "de", "el", "en", "es", "et", "fr", "hu", "id", "it", "ja", "kk", "ko", "nl", "pl", "pt-BR", "ro", "ru", "sl", "sv", "th", "tr", "vi", "zh-CN"];
-  var languagesPaths = languages.map(function (language) {
-    return "i18n/"+language+".i18n.json";
-  });
-  api.addFiles(languagesPaths, ["client", "server"]);
 });
