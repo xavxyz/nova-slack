@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { withRouter } from 'react-router'
 
 class SlackButton extends Component {
   render() {
@@ -19,5 +20,4 @@ class SlackButton extends Component {
   }
 };
 
-module.exports = SlackButton;
-export default SlackButton;
+export default withRouter(SlackButton);
