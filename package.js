@@ -6,6 +6,8 @@ Package.describe({
   documentation: 'README.md'
 });
 
+Npm.depends({'request-promise': "3.0.0"});
+
 Package.onUse(function(api) {
 
   api.versionsFrom(['METEOR@1.0']);
@@ -17,11 +19,11 @@ Package.onUse(function(api) {
     'nova:posts@0.26.3-nova',
   ]);
 
-  api.mainModule([
+  api.addFiles([
     'lib/modules.js',
   ], ['client', 'server']);
 
-  api.mainModule([
+  api.addFiles([
     'lib/server/modules.js',
   ], ['server']);
 });
