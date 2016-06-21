@@ -17,11 +17,11 @@ Package.onUse(function(api) {
     'nova:posts@0.26.3-nova',
   ]);
 
-  api.addFiles([
+  api.mainModule([
     'lib/modules.js',
   ], ['client', 'server']);
 
-  api.addFiles([
+  api.mainModule([
     'lib/server/modules.js',
   ], ['server']);
 });
