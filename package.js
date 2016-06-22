@@ -1,6 +1,6 @@
 Package.describe({
   name: 'xavcz:nova-slack',
-  version: '1.0.0',
+  version: '0.1.0',
   summary: 'Automatically send Telescope Nova posts as messages to connected Slack teams via the Add To Slack button',
   git: 'https://github.com/xavcz/nova-slack.git',
   documentation: 'README.md'
