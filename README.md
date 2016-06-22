@@ -1,20 +1,32 @@
-# SlackScope
-A package for [Telescope](http://www.telescopeapp.org): automatically send your posts as messages to any connected Slack Team.
-
-### Compatibility
-This package has not tested with Nova branch of Telescope (the default one). This has been built for the Legacy version.
-You can still try to use it, but you will have to add the settings yourself and tweak the UI.
+# nova-slack
+A package for [Telescope Nova](http://www.telescopeapp.org): automatically send your posts as messages to any connected Slack Team.
 
 # Installation
 
-Type `meteor add xavcz:slackscope` in your console within the Telescope folder. 
+Type `meteor add xavcz:nova-slack` in your console within the Nova folder. 
 
 Once the package is installed:
 
-1. You first need to create a [Slack App](https://api.slack.com/applications/new).
+* You first need to create a [Slack App](https://api.slack.com/applications/new).
 
-2. Configure the redirect URI as `http://your-telescope-app.com/slack-connected`.
+* Configure the redirect URI as `http://your-telescope-app.com/`.
 
-3. Register your App Client ID & App Client Secret to your Telescope Settings.
+* Register your App Client Id & App Client Secret to `your settings.json` file: 
+```
+{
+  public: {
+    ...
+    "slackAppClientId": "my-slack-app-client-id"
+  },
+  ...
+  "slackAppClientSecret": "my-slack-app-secret"
+}
+```
 
-4. A wild "Add to Slack" button appeared in the footer of your app! Anyone can get your posts automatically in their Slack team, hooray!
+* Add a wild "Add to Slack" button by extending any components of your choice :
+```
+<Telescope.components.SlackButton />
+```
+
+* Spread the word and let your content be distributed! \o/
+[![Ziuuu](https://d13yacurqjgara.cloudfront.net/users/39185/screenshots/2591998/egg.jpg)](https://dribbble.com/shots/2591998-Egg)
