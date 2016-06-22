@@ -3,7 +3,6 @@ import { withRouter } from 'react-router'
 
 class SlackButton extends Component {
 
-  
   componentDidMount() {
     const { query } = this.props.location;
     
@@ -19,9 +18,9 @@ class SlackButton extends Component {
         this.context.messages.clearSeen();
 
         if(err) { // woops, something bad happened
-          this.context.messages.flash('WOOOPS!', 'danger');
+          this.context.messages.flash('Hmm... Something bad happened! You should contact the admin.', 'danger');
         } else { // woot we are all done!
-          this.context.messages.flash('DONE!', 'success');
+          this.context.messages.flash('Your Slack team is now connected, you will receive new posts and weekly summary! Yeepi 🎉', 'success');
         }
       });
     }
