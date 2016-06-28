@@ -16,6 +16,7 @@ Package.onUse(function(api) {
     'nova:core@0.26.3-nova',
     'nova:lib@0.26.3-nova',
     'nova:settings@0.26.3-nova',
+    'nova:users@0.26.3-nova',
     'nova:posts@0.26.3-nova',
   ]);
 
