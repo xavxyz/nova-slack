@@ -20,11 +20,7 @@ Package.onUse(function(api) {
     'nova:posts@0.26.3-nova',
   ]);
 
-  api.addFiles([
-    'lib/modules.js',
-  ], ['client', 'server']);
-
-  api.addFiles([
-    'lib/server/modules.js',
-  ], ['server']);
+  api.mainModule("lib/server.js", "server");
+  api.mainModule("lib/client.js", "client");
+  
 });
